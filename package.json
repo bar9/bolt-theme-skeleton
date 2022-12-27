@@ -1,0 +1,37 @@
+{
+  "name": "bolt-theme-skeleton",
+  "version": "0.0.1",
+  "description": "A Bolt CMS theme skeleton based on tailwind 3, daisyui and storybook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bar9/bolt-theme-skeleton.git"
+  },
+  "author": "rolandbrand11@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bar9/bolt-theme-skeleton/issues"
+  },
+  "homepage": "https://github.com/bar9/bolt-theme-skeleton#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/html": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.3.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "twigjs-loader": "^1.0.3"
+  }
+}
