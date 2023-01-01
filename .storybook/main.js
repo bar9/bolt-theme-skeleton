@@ -1,4 +1,3 @@
-
 module.exports = {
   "stories": [
     "../stories/**/*.stories.mdx",
@@ -10,7 +9,7 @@ module.exports = {
     "@storybook/addon-interactions"
   ],
   "framework": "@storybook/html",
-  webpackFinal: async (config, { configType }) => {
+  "webpackFinal": async (config, { configType }) => {
     config.module.rules.push({
       test: /\.twig$/,
       use: "twigjs-loader",
