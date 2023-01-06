@@ -1,7 +1,7 @@
 module.exports = {
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../**/*.stories.mdx",
+    "../**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-links",
@@ -20,7 +20,12 @@ module.exports = {
   "webpackFinal": async (config, { configType }) => {
     config.module.rules.push({
       test: /\.twig$/,
-      use: "twigjs-loader",
+      use: {
+        loader: "twing-loader",
+        options: {
+          environmentModulePath: require.resolve('./twing-environment.js')
+        }
+      },
     });
 
     return config;
