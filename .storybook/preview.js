@@ -19,3 +19,50 @@ export const loaders = [
     }
   }
 ]
+
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    toolbar: {
+      icon: 'paintbrush',
+      // Array of plain string values or MenuItem shape
+      items: [
+        'light',
+        'dark',
+        'cupcake',
+        'bumblebee',
+        'emerald',
+        'corporate',
+        'synthwave',
+        'retro',
+        'cyberpunk',
+        'valentine',
+        'halloween',
+        'garden',
+        'forest',
+        'aqua',
+        'lofi',
+        'pastel',
+        'fantasy',
+        'wireframe',
+        'black',
+        'luxury',
+        'dracula',
+        'cmyk',
+        'autumn',
+        'business',
+        'acid',
+        'lemonade',
+        'night',
+        'coffee',
+        'winter'
+      ],
+      // Change title based on selected value
+      dynamicTitle: true,
+    },
+  },
+}
+
+export const DEFAULT_THEME = 'business';
+export const decorators = [(storyFn, context) => `<div data-theme="${context.globals.theme ?? DEFAULT_THEME}">${storyFn()}</div>`];
