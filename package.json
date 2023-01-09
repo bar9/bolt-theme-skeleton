@@ -1,6 +1,6 @@
 {
   "name": "bolt-theme-skeleton",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Bolt CMS theme skeleton based on tailwind 3, daisyui and storybook",
   "main": "index.js",
   "scripts": {

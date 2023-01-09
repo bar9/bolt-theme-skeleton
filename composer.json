@@ -1,0 +1,18 @@
+{
+  "name": "bar9/bolt-theme-skeleton",
+  "description": "A Bolt CMS theme skeleton based on tailwind 3, daisyui and storybook",
+  "type": "bolt-theme",
+  "homepage": "https://github.com/bar9/bolt-theme-skeleton",
+  "keywords": [
+    "Theme",
+    "Bolt",
+    "Tailwind",
+    "Storybook",
+    "DaisyUI"
+  ],
+  "license": "MIT",
+  "require": {
+    "bolt/core": "^5.0",
+    "twig/twig": "^3.0"
+  }
+}
